@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://www.postman-echo.com/post" method="post">
+        <label for="dni">dni:</label>
+            <br>
+        <input placeholder="escribir" type="text" name="dni" pattern="[0-9]¨{8}[A-Z]{1}" > 
+            <br>
+        <label for="apellidos">apellidos:</label>
+            <br>
+        <input placeholder="escribir" name="apellidos" maxlength="30">
+            <br>
+        <label for="nombre">nombre:</label>
+            <br>
+        <input placeholder="escribir" type="text" name="nombre" maxlength="15">
+            <br>
+        <input type="date" max="2020-10-01" min="1950-10-01" value="1990-10-01">
+            <br>
+        <label for="nacionalidad">nacionalidad</label>
+            <br>
+        <select name="nacionalidad" id="nacionalidad">nacionalidad
+            <option value="china">china</option>
+            <option value="colombia">colombia</option>
+            <option selected value="español">español</option>
+        </select>
+            <br>
+            <label for="correo electronico">correo electronico:</label>
+            <br>
+            <input placeholder="escribir"  type="email" name="correo electronico" id="correo electronico">
+            <br>
+            <label for="contraseña">contraseña:</label>
+            <br>
+            <input placeholder="escribir" maxlength="10" type="password">
+            <br> 
+            <label for="sexo">sexo</label>
+            <br>
+            <input type="radio" name="eleccion" id="hombre">
+            <label for="hombre">hombre</label>
+            <input type="radio" name="eleccion" id="mujer">
+            <label for="mujer">mujer</label>
+            <input type="radio" name="eleccion" id="otros">
+            <label for="otros">otros</label>
+            <br>
+            <label for="otros comentarios">otros comentarios</label>
+            <br>
+            <textarea placeholder="escribir" name="nombre" id="id" cols="30" rows="10"></textarea>
+            <br>
+            <input type="checkbox">
+            <label for="Confirmación de aceptar términos y condiciones">Confirmación de aceptar términos y condiciones</label>
+            <br>
+            <input checked type="checkbox">
+            <label  for="Confirmar el deseo de recibir más información a través del correo" >Confirmar el deseo de recibir más información a través del correo</label>
+            <br>
+            <input type="reset" value="restablecer">          
+        <Input type="submit" value="enviar">
+
+
+
+
+
+    </form>
+   
+</body>
+</html>
